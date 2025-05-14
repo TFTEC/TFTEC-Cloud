@@ -40,5 +40,5 @@ Connect-MgGraph -Scopes "User.Read.All" -TenantId "inclua-o-tenantid" -NoWelcome
 
 **Validar o ImmutableID do usuário no Entra ID**: 
 ```powershell
-Get-MgUser -UserId usuario@dominio | Select-Object UserPrincipalName, OnPremisesImmutableId
+Get-MgUser -UserId "nomedousuario@dominio" -Property "onPremisesImmutableId" | Select-Object onPremisesImmutableId
 ```
