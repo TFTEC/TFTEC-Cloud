@@ -59,7 +59,7 @@ Get-ADUser -Identity usuario.local -Properties objectGUID | ForEach-Object {
 }
 ```
 
-Setar o ImmutableID coletado no ambiente local para o Entra ID (Hard Match)
+Setar o ImmutableID coletado no ambiente local para o Entra ID (Hard Match) <br>
 ~~Set-MsolUser -UserPrincipalName adelev@tftecprime.cloud -ImmutableId Gnoqdfsdf8989Jv+Fg==~~
 ```powershell
 Update-MgUser -UserId "usuario@seudominio.com" -OnPremisesImmutableId "SEU_IMMUTABLE_ID"
